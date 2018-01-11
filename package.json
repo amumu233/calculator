@@ -1,0 +1,41 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "基于electron和javascript的桌面计算器应用",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-packager ./ 计算器 --platform=win32 --overwrite --icon=./static/icon.ico",
+    "dist": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.amumu233.calculator",
+    "productName": "计算器",
+    "electronVersion": "1.7.5",
+    "win": {
+      "icon": "./static/icon.ico"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amumu233/calculator.git"
+  },
+  "keywords": [
+    "electron",
+    "calculator"
+  ],
+  "author": "amumu233",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amumu233/calculator/issues"
+  },
+  "homepage": "https://github.com/amumu233/calculator#readme",
+  "devDependencies": {
+    "electron": "^1.7.9",
+    "electron-builder": "^19.48.3",
+    "electron-packager": "^10.1.0"
+  },
+  "dependencies": {
+    "mathjs": "^3.17.0"
+  }
+}
